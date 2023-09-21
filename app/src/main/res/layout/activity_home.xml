@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".home">
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/elec"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="30dp"/>
+
+    <ImageView
+        android:id="@+id/logout"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/logout"
+        android:padding="10dp"
+        android:background="@drawable/round_back_gry"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="30dp"
+        android:tint="@color/black"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@id/logo"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_above="@id/deck"
+        android:animateLayoutChanges="true">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/source_code_pro_bold"
+                android:text="Hello"
+                android:textColor="@color/black"
+                android:textSize="25dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:fontFamily="@font/source_code_pro_bold"
+                android:text="Chandan!"
+                android:textColor="@color/electric_blue"
+                android:textSize="25dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/all_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/round_back_gry"
+                android:backgroundTint="@color/electric_blue"
+                android:padding="10dp"
+                android:textSize="15dp"
+                android:text="All"
+                android:fontFamily="@font/source_code_pro_semibold"
+                android:textColor="@color/white"/>
+
+            <TextView
+                android:id="@+id/ineff_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/round_back_gry"
+                android:padding="10dp"
+                android:textSize="15dp"
+                android:layout_marginLeft="20dp"
+                android:text="Inefficient"
+                android:fontFamily="@font/source_code_pro_semibold"
+                android:textColor="@color/black"/>
+
+        </LinearLayout>
+
+        <com.nabilmh.lottieswiperefreshlayout.LottieSwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/swipe_refresh_layout"
+            android:layout_above="@+id/input"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:lottie_rawRes="@raw/login">
+
+        <GridView
+            android:id="@+id/device_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:horizontalSpacing="6dp"
+            android:numColumns="2"
+            android:verticalSpacing="20dp"
+            android:divider="@null"
+            android:dividerHeight="20dp"
+            android:listSelector="@android:color/transparent"
+            android:scrollbars="none"
+            android:transcriptMode="alwaysScroll"/>
+
+        </com.nabilmh.lottieswiperefreshlayout.LottieSwipeRefreshLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/deck"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/sub_back"
+        android:paddingTop="40dp"
+        android:paddingBottom="20dp"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/electric_blue"
+            android:fontFamily="@font/source_code_pro_semibold"
+            android:text="ENERGIZER"
+            android:letterSpacing="0.1"
+            android:textSize="14dp"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

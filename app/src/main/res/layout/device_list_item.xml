@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/round_back"
+    android:padding="20dp"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/chat_bubble_check"/>
+
+    <TextView
+        android:id="@+id/health"
+        android:layout_width="wrap_content"
+        android:layout_height="15dp"
+        android:layout_marginTop="10dp"
+        android:textSize="12dp"
+        android:fontFamily="@font/source_code_pro"
+        android:text="Health:100%"/>
+
+    <TextView
+        android:id="@+id/location"
+        android:layout_width="wrap_content"
+        android:layout_height="15dp"
+        android:layout_marginTop="10dp"
+        android:textSize="12dp"
+        android:fontFamily="@font/source_code_pro"
+        android:text="Location:Kharar"/>
+
+</LinearLayout>
